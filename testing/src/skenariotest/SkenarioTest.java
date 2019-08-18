@@ -3,6 +3,8 @@ package skenariotest;
 import static org.junit.Assert.assertEquals;
 import static org.junit.Assert.assertTrue;
 
+import java.util.Arrays;
+
 import org.junit.Test;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
@@ -62,4 +64,15 @@ public class SkenarioTest extends FunctionalTest {
 		assertEquals("Instruksi Pembayaran", contribute.Textbayar());
 		
 	}
-}
+	//Create a function to check if there are any same value between two different arrays.
+	@Test
+	public void test5() {
+			int[] a = { 1, 2, 3, 4 };
+			int[] b = { 1, 2, 3, 4 };
+
+			if (Arrays.equals(a, b))
+				System.out.println("Arrays are equal");
+			else
+				System.out.println("Arrays are not equal");
+		}
+	}
